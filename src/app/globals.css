@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	line-height: 1.5;
+	font-weight: 400;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: 'slnt' 0;
+}
+
+@layer base {
+	body {
+		@apply bg-zinc-950 text-neutral-200;
+	}
+}
+@keyframes gradientAnimation {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+  .animated-gradient {
+	background: linear-gradient(270deg, #1d4ed8, #7c3aed, #d946ef, #ec4899, #f43f5e);
+	background-size: 1000% 1000%;
+	animation: gradientAnimation 5s ease infinite;
+  }
+  
